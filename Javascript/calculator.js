@@ -9,6 +9,8 @@ DOM.buttonMult.onclick = () => multNumber(`${DOM.inputOne.value} * ${DOM.inputTw
 
 DOM.buttonDiv.onclick = () => divNumber(`${DOM.inputOne.value} / ${DOM.inputTwo.value} = ${DOM.inputOne.value / DOM.inputTwo.value}`);
 
+DOM.buttonEqual.onclick = () => equals();
+
 function addNumber(int){
     let out = document.createElement(`list_output`);
     out.innerHTML =int;
@@ -31,4 +33,8 @@ function divNumber(int){
     let out = document.createElement(`list_output`);
     out.innerHTML =int;
     DOM.outputList.appendChild(out)
+}
+
+function equals() {
+    displist
 }
